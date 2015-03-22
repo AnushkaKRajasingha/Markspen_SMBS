@@ -1,0 +1,5 @@
+D:\My_Project_V1\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\My_Project_V1\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\My_Project_V1\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\My_Project_V1\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\My_Project_V1\BusinessLayer\obj\Debug\BusinessLayer.pdb
