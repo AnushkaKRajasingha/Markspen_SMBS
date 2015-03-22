@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CB20A17-F6AF-401B-A33B-D3FD827DC5DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Markspen_SMBS_V1</RootNamespace>
+    <AssemblyName>Markspen_SMBS_V1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\Customer\frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Customer\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Customer\frmCustomerBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Customer\frmCustomerBrowser.Designer.cs">
+      <DependentUpon>frmCustomerBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Inventory\frmAddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Inventory\frmAddStock.Designer.cs">
+      <DependentUpon>frmAddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Inventory\frmStockAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Inventory\frmStockAdjustment.Designer.cs">
+      <DependentUpon>frmStockAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Inventory\frmViewInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Inventory\frmViewInventory.Designer.cs">
+      <DependentUpon>frmViewInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Invoice\frmAddInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Invoice\frmAddInvoice.Designer.cs">
+      <DependentUpon>frmAddInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Item\frmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Item\frmAddCategory.Designer.cs">
+      <DependentUpon>frmAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Item\frmAddUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Item\frmAddUnits.Designer.cs">
+      <DependentUpon>frmAddUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Item\frmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Item\frmItem.Designer.cs">
+      <DependentUpon>frmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Item\frmItemBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Item\frmItemBrowser.Designer.cs">
+      <DependentUpon>frmItemBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Partner\frmMMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Partner\frmMMS.Designer.cs">
+      <DependentUpon>frmMMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Partner\frmpartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Partner\frmpartner.Designer.cs">
+      <DependentUpon>frmpartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Payment\frmApproveCredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Payment\frmApproveCredi.Designer.cs">
+      <DependentUpon>frmApproveCredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Payment\frmCashPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Payment\frmCashPayment.Designer.cs">
+      <DependentUpon>frmCashPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Payment\frmChequeState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Payment\frmChequeState.Designer.cs">
+      <DependentUpon>frmChequeState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Payment\frmCreditPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Payment\frmCreditPayment.Designer.cs">
+      <DependentUpon>frmCreditPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\PO\frmPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\PO\frmPO.Designer.cs">
+      <DependentUpon>frmPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Supplier\frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Supplier\frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Supplier\frmSupplierBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Supplier\frmSupplierBrowser.Designer.cs">
+      <DependentUpon>frmSupplierBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\User\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\User\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\User\frmChangePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\User\frmChangePWD.Designer.cs">
+      <DependentUpon>frmChangePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\User\frmGrantAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\User\frmGrantAccess.Designer.cs">
+      <DependentUpon>frmGrantAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\User\frmUserType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\User\frmUserType.Designer.cs">
+      <DependentUpon>frmUserType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interface\Customer\frmCustomerBrowser.resx">
+      <DependentUpon>frmCustomerBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Inventory\frmAddStock.resx">
+      <DependentUpon>frmAddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Inventory\frmStockAdjustment.resx">
+      <DependentUpon>frmStockAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Inventory\frmViewInventory.resx">
+      <DependentUpon>frmViewInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Invoice\frmAddInvoice.resx">
+      <DependentUpon>frmAddInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Item\frmAddCategory.resx">
+      <DependentUpon>frmAddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Item\frmAddUnits.resx">
+      <DependentUpon>frmAddUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Item\frmItem.resx">
+      <DependentUpon>frmItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Item\frmItemBrowser.resx">
+      <DependentUpon>frmItemBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Partner\frmMMS.resx">
+      <DependentUpon>frmMMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Partner\frmpartner.resx">
+      <DependentUpon>frmpartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Payment\frmApproveCredi.resx">
+      <DependentUpon>frmApproveCredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Payment\frmCashPayment.resx">
+      <DependentUpon>frmCashPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Payment\frmChequeState.resx">
+      <DependentUpon>frmChequeState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Payment\frmCreditPayment.resx">
+      <DependentUpon>frmCreditPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\PO\frmPO.resx">
+      <DependentUpon>frmPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Supplier\frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Supplier\frmSupplierBrowser.resx">
+      <DependentUpon>frmSupplierBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\User\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\User\frmChangePWD.resx">
+      <DependentUpon>frmChangePWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\User\frmGrantAccess.resx">
+      <DependentUpon>frmGrantAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\User\frmUserType.resx">
+      <DependentUpon>frmUserType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doller.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMS.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
